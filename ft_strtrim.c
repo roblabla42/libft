@@ -6,7 +6,7 @@
 /*   By: rlambert <rlambert@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 15:11:42 by rlambert          #+#    #+#             */
-/*   Updated: 2014/11/06 19:30:39 by rlambert         ###   ########.fr       */
+/*   Updated: 2015/01/02 16:21:42 by rlambert         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,8 @@ char	*ft_strtrim(char const *s)
 {
 	char const *s_end;
 
+	if (s == NULL)
+		return (NULL);
 	while (*s == ' ' || *s == '\t' || *s == '\n')
 		s++;
 	if (*s == '\0')

@@ -6,7 +6,7 @@
 /*   By: rlambert <rlambert@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 15:26:03 by rlambert          #+#    #+#             */
-/*   Updated: 2014/11/05 17:23:48 by rlambert         ###   ########.fr       */
+/*   Updated: 2015/01/02 18:42:50 by rlambert         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -58,6 +58,8 @@ char				**ft_strsplit(char const *str, char c)
 	int			i;
 	const char	*next;
 
+	if (str == NULL)
+		return (NULL);
 	ret = (char**)malloc(sizeof(char*) * (ft_str_count_splits(str, c) + 1));
 	if (ret == NULL)
 		return (NULL);

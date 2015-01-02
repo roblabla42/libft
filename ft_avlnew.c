@@ -6,7 +6,7 @@
 /*   By: rlambert <rlambert@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/11 14:03:20 by rlambert          #+#    #+#             */
-/*   Updated: 2014/11/24 19:49:16 by rlambert         ###   ########.fr       */
+/*   Updated: 2015/01/02 15:03:25 by rlambert         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ t_avl	*ft_avlnew(int key, void *content, size_t content_size)
 {
 	t_avl *avl;
 
-	if (avl = (t_avl*)malloc(sizeof(t_avl)) == NULL)
+	if ((avl = (t_avl*)malloc(sizeof(t_avl))) == NULL)
 		return (NULL);
 	avl->key = key;
 	avl->height = 1;
