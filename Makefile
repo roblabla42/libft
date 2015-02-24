@@ -6,7 +6,7 @@
 #    By: rlambert <rlambert@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2014/11/03 11:25:08 by rlambert          #+#    #+#              #
-#    Updated: 2014/11/24 12:32:30 by rlambert         ###   ########.fr        #
+#    Updated: 2015/01/28 20:24:18 by rlambert         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -22,6 +22,7 @@ SRCS = ft_memset.c \
 	   ft_memchr.c \
 	   ft_memcmp.c \
 	   ft_strlen.c \
+	   ft_nstrlen.c \
 	   ft_strdup.c \
 	   ft_strcpy.c \
 	   ft_strncpy.c \
@@ -34,6 +35,7 @@ SRCS = ft_memset.c \
 	   ft_strnstr.c \
 	   ft_strcmp.c \
 	   ft_strncmp.c \
+	   ft_strrev.c \
 	   ft_atoi.c \
 	   ft_isalpha.c \
 	   ft_isdigit.c \
@@ -58,21 +60,33 @@ SRCS = ft_memset.c \
 	   ft_strtrim.c \
 	   ft_strsplit.c \
 	   ft_itoa.c \
+	   ft_utoa.c \
 	   ft_putchar.c \
+	   ft_putwchar.c \
 	   ft_putstr.c \
+	   ft_putwstr.c \
+	   ft_putnwstr.c \
+	   ft_putnstr.c \
 	   ft_putendl.c \
 	   ft_putnbr.c \
+	   ft_putnbrbase.c \
 	   ft_putchar_fd.c \
+	   ft_putwchar_fd.c \
 	   ft_putstr_fd.c \
+	   ft_putnstr_fd.c \
+	   ft_putwstr_fd.c \
 	   ft_putendl_fd.c \
 	   ft_putnbr_fd.c \
+	   ft_putnbrbase_fd.c \
 	   ft_lstnew.c \
 	   ft_lstdelone.c \
 	   ft_lstdel.c \
 	   ft_lstadd.c \
+	   ft_lstlink.c \
 	   ft_lstiter.c \
 	   ft_lstmap.c \
 	   ft_max.c \
+	   ft_min.c \
 	   ft_avladd.c \
 	   ft_avlheight.c \
 	   ft_avlnew.c \

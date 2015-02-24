@@ -1,19 +1,16 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr.c                                        :+:      :+:    :+:   */
+/*   ft_min.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rlambert <rlambert@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/05 16:22:44 by rlambert          #+#    #+#             */
-/*   Updated: 2015/01/28 15:49:13 by rlambert         ###   ########.fr       */
+/*   Created: 2014/11/11 14:16:05 by rlambert          #+#    #+#             */
+/*   Updated: 2015/01/27 17:53:44 by rlambert         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
-#include <inttypes.h>
-
-void	ft_putnbr(intmax_t n)
+int		ft_min(int x, int y)
 {
-	ft_putnbr_fd(n, 1);
+	return (x < y ? x : y);
 }

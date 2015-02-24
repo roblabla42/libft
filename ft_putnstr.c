@@ -1,19 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr.c                                        :+:      :+:    :+:   */
+/*   ft_putnstr.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rlambert <rlambert@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/05 16:22:44 by rlambert          #+#    #+#             */
-/*   Updated: 2015/01/28 15:49:13 by rlambert         ###   ########.fr       */
+/*   Created: 2015/01/21 11:52:59 by rlambert          #+#    #+#             */
+/*   Updated: 2015/01/26 15:07:32 by rlambert         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <sys/types.h>
+#include <unistd.h>
 #include "libft.h"
-#include <inttypes.h>
 
-void	ft_putnbr(intmax_t n)
+void	ft_putnstr(char const *str, size_t str_len)
 {
-	ft_putnbr_fd(n, 1);
+	ft_putnstr_fd(str, str_len, STDOUT_FILENO);
 }

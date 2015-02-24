@@ -1,19 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr.c                                        :+:      :+:    :+:   */
+/*   ft_putnbrbase_fd.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rlambert <rlambert@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/05 16:22:44 by rlambert          #+#    #+#             */
-/*   Updated: 2015/01/28 15:49:13 by rlambert         ###   ########.fr       */
+/*   Created: 2015/01/26 16:56:41 by rlambert          #+#    #+#             */
+/*   Updated: 2015/01/28 16:14:55 by rlambert         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <unistd.h>
 #include "libft.h"
-#include <inttypes.h>
 
-void	ft_putnbr(intmax_t n)
+static void	ft_putnbrbase_fd_inner(uintmax_t nbr, char *base, size_t baselen,
+				int fd)
 {
-	ft_putnbr_fd(n, 1);
+	if (nbr >= baselen)
+	{
+		ft_putnbrbase_fd_inner(nbr / baselen, base, baselen, fd);
+		ft_putnbrbase_fd_inner(nbr % baselen, base, baselen, fd);
+	}
+	else
+		ft_putchar_fd(base[nbr], fd);
+}
+
+void		ft_putnbrbase_fd(uintmax_t nbr, char *base, int fd)
+{
+	ft_putnbrbase_fd_inner(nbr, base, ft_strlen(base), fd);
 }

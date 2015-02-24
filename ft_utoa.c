@@ -1,58 +1,52 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_itoa.c                                          :+:      :+:    :+:   */
+/*   ft_utoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rlambert <rlambert@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/05 16:04:21 by rlambert          #+#    #+#             */
-/*   Updated: 2015/01/26 15:48:46 by rlambert         ###   ########.fr       */
+/*   Created: 2015/01/22 14:07:58 by rlambert          #+#    #+#             */
+/*   Updated: 2015/01/26 16:53:09 by rlambert         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include <libft.h>
 
-static int	ft_countchars(int n)
+int		ft_countchar(unsigned int nbr, size_t base)
 {
 	int i;
 
 	i = 0;
-	if (n == 0)
-		i++;
-	else if (n < 0)
-		i++;
+	if (nbr == 0)
+		return (1);
 	else
 	{
-		while (n > 0)
+		while (nbr != 0)
 		{
+			nbr /= base;
 			i++;
-			n /= 10;
 		}
+		return (i);
 	}
-	return (i);
 }
 
-char		*ft_itoa(int n)
+char	*ft_utoa(unsigned int nbr, char const *base_chr)
 {
-	int				i;
-	unsigned int	x;
-	int				sign;
 	char			*buf;
+	int				i;
+	size_t			base;
 
-	buf = ft_strnew(ft_countchars(n));
-	x = n;
-	if ((sign = n) < 0)
-		x = -n;
+	base = ft_strlen(base_chr);
+	if ((buf = ft_strnew(ft_countchar(nbr, base))) == NULL)
+		return (NULL);
 	i = 0;
-	if (x == 0)
+	if (nbr == 0)
 		buf[i++] = '0';
-	while (x > 0)
+	while (nbr > 0)
 	{
-		buf[i++] = x % 10 + '0';
-		x /= 10;
+		buf[i++] = base_chr[nbr % base];
+		nbr /= base;
 	}
-	if (sign < 0)
-		buf[i++] = '-';
 	buf[i] = '\0';
 	ft_strrev(buf);
 	return (buf);

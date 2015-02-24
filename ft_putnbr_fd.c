@@ -6,15 +6,15 @@
 /*   By: rlambert <rlambert@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 16:40:33 by rlambert          #+#    #+#             */
-/*   Updated: 2014/11/06 18:00:14 by rlambert         ###   ########.fr       */
+/*   Updated: 2015/01/28 15:49:30 by rlambert         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putnbr_fd(int n, int fd)
+void	ft_putnbr_fd(intmax_t n, int fd)
 {
-	unsigned int x;
+	uintmax_t x;
 
 	x = n;
 	if (n < 0)

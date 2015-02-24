@@ -1,19 +1,21 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putnbr.c                                        :+:      :+:    :+:   */
+/*   ft_putwstr_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rlambert <rlambert@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/05 16:22:44 by rlambert          #+#    #+#             */
-/*   Updated: 2015/01/28 15:49:13 by rlambert         ###   ########.fr       */
+/*   Created: 2015/01/26 14:37:16 by rlambert          #+#    #+#             */
+/*   Updated: 2015/02/17 17:50:23 by rlambert         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include <wchar.h>
 #include "libft.h"
-#include <inttypes.h>
+#include <unistd.h>
 
-void	ft_putnbr(intmax_t n)
+void	ft_putwstr_fd(wchar_t const *str, int fd)
 {
-	ft_putnbr_fd(n, 1);
+	while (*str)
+		ft_putwchar_fd(*str++, fd);
 }
