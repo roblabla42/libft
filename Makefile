@@ -6,13 +6,13 @@
 #    By: rlambert <rlambert@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2014/11/03 11:25:08 by rlambert          #+#    #+#              #
-#    Updated: 2015/01/28 20:24:18 by rlambert         ###   ########.fr        #
+#    Updated: 2015/02/26 14:44:57 by roblabla         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libft.a
 
-CFLAGS += -Wall -Wextra -Werror -Iincludes/
+CFLAGS += -Wall -Wextra -Werror -Iinclude/
 
 SRCS = ft_memset.c \
 	   ft_bzero.c \
