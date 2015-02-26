@@ -6,7 +6,7 @@
 /*   By: rlambert <rlambert@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 11:14:15 by rlambert          #+#    #+#             */
-/*   Updated: 2015/01/28 20:24:20 by rlambert         ###   ########.fr       */
+/*   Updated: 2015/02/26 14:41:09 by roblabla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,8 @@
 # include <sys/types.h>
 # include <wchar.h>
 # include <inttypes.h>
+# define FT_MIN(x, y) (x) < (y) ? (x) : (y)
+# define FT_MAX(x, y) (x) > (y) ? (x) : (y)
 
 void				*ft_memset(void *dst, int data, size_t len);
 void				ft_bzero(void *dst, size_t len);
