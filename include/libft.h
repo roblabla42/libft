@@ -6,7 +6,7 @@
 /*   By: rlambert <rlambert@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 11:14:15 by rlambert          #+#    #+#             */
-/*   Updated: 2015/02/26 14:41:09 by roblabla         ###   ########.fr       */
+/*   Updated: 2015/03/23 17:45:25 by roblabla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -61,8 +61,12 @@ int					ft_strequ(char const *s1, char const *s2);
 int					ft_strnequ(char const *s1, char const *s2, size_t len);
 char				*ft_strsub(char const *s, unsigned int start, size_t len);
 char				*ft_strjoin(char const *s1, char const *s2);
+char				*ft_multistrjoin(int c, ...);
 char				*ft_strtrim(char const *s);
 char				**ft_strsplit(char const *s, char c);
+char				**ft_strsplitwith(char *s, char *seps, size_t *count);
+int					ft_strprefix(const char *str, const char *prefix);
+int					ft_strsuffix(const char *str, const char *suffix);
 char				*ft_itoa(int n);
 char				*ft_utoa(unsigned int n, char const *base);
 void				ft_putchar(char c);

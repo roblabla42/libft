@@ -6,7 +6,7 @@
 #    By: rlambert <rlambert@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2014/11/03 11:25:08 by rlambert          #+#    #+#              #
-#    Updated: 2015/02/26 14:44:57 by roblabla         ###   ########.fr        #
+#    Updated: 2015/03/23 17:33:47 by roblabla         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -57,8 +57,12 @@ SRCS = ft_memset.c \
 	   ft_strnequ.c \
 	   ft_strsub.c \
 	   ft_strjoin.c \
+	   ft_multistrjoin.c \
 	   ft_strtrim.c \
 	   ft_strsplit.c \
+	   ft_strsplitwith.c \
+	   ft_strprefix.c \
+	   ft_strsuffix.c \
 	   ft_itoa.c \
 	   ft_utoa.c \
 	   ft_putchar.c \
