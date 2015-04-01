@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_multistrjoin.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: roblabla </var/spool/mail/roblabla>        +#+  +:+       +#+        */
+/*   By: rlambert <rlambert@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/02/26 14:59:32 by roblabla          #+#    #+#             */
-/*   Updated: 2015/02/26 15:55:11 by roblabla         ###   ########.fr       */
+/*   Created: 2015/04/01 23:18:45 by rlambert          #+#    #+#             */
+/*   Updated: 2015/04/01 23:18:45 by rlambert         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

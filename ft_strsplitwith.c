@@ -6,7 +6,7 @@
 /*   By: rlambert <rlambert@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 15:26:03 by rlambert          #+#    #+#             */
-/*   Updated: 2015/03/23 18:04:57 by roblabla         ###   ########.fr       */
+/*   Updated: 2015/04/01 23:20:06 by rlambert         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -40,7 +40,7 @@ static void		do_words(char *str, char *seps, void *data, void (*f)())
 	}
 }
 
-static void			insert_word(char *data, char *str, char *next)
+static void		insert_word(char *data, char *str, char *next)
 {
 	char	***strs;
 	size_t	*i;
@@ -52,7 +52,7 @@ static void			insert_word(char *data, char *str, char *next)
 	*i += 1;
 }
 
-static void			setup_arg(char *arg, char **ret)
+static void		setup_arg(char *arg, char **ret)
 {
 	size_t	*iarg;
 	char	***retarg;
@@ -63,7 +63,7 @@ static void			setup_arg(char *arg, char **ret)
 	*retarg = ret;
 }
 
-char				**ft_strsplitwith(char *str, char *seps, size_t *count)
+char			**ft_strsplitwith(char *str, char *seps, size_t *count)
 {
 	char	**ret;
 	char	arg[sizeof(size_t) + sizeof(char**)];
