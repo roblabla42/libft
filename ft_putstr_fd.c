@@ -6,7 +6,7 @@
 /*   By: rlambert <rlambert@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 16:39:02 by rlambert          #+#    #+#             */
-/*   Updated: 2014/11/05 16:39:40 by rlambert         ###   ########.fr       */
+/*   Updated: 2015/04/03 19:01:03 by rlambert         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,5 @@
 
 void	ft_putstr_fd(char const *s, int fd)
 {
-	while (*s != '\0')
-		ft_putchar_fd(*s++, fd);
+	write(fd, s, ft_strlen(s));
 }

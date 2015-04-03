@@ -6,12 +6,11 @@
 /*   By: rlambert <rlambert@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/11 16:42:47 by rlambert          #+#    #+#             */
-/*   Updated: 2014/11/24 19:48:21 by rlambert         ###   ########.fr       */
+/*   Updated: 2015/04/03 17:21:36 by rlambert         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 static void		ft_avlupdateheight(t_avl *n)
 {
