@@ -6,7 +6,7 @@
 #    By: rlambert <rlambert@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2014/11/03 11:25:08 by rlambert          #+#    #+#              #
-#    Updated: 2015/03/23 17:33:47 by roblabla         ###   ########.fr        #
+#    Updated: 2015/10/28 14:16:38 by roblabla         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -95,6 +95,11 @@ SRCS = ft_memset.c \
 	   ft_avlheight.c \
 	   ft_avlnew.c \
 	   ft_avlfind.c \
+	   ft_stream/read_line.c \
+	   ft_stream/read_signed.c \
+	   ft_stream/read_unsigned.c \
+	   ft_stream/stream.c \
+	   ft_stream/write_stream.c \
 
 OBJS = $(SRCS:.c=.o)
 
