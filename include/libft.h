@@ -18,6 +18,11 @@
 # define FT_MIN(x, y) (x) < (y) ? (x) : (y)
 # define FT_MAX(x, y) (x) > (y) ? (x) : (y)
 
+# define FALSE 0
+# define TRUE !FALSE
+
+typedef char t_bool;
+
 void				*ft_memset(void *dst, int data, size_t len);
 void				ft_bzero(void *dst, size_t len);
 void				*ft_memcpy(void *dst, const void *src, size_t len);
