@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   read_unsigned.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: roblabla </var/spool/mail/roblabla>        +#+  +:+       +#+        */
+/*   By: roblabla <rlambert@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/04/02 23:46:01 by roblabla          #+#    #+#             */
-/*   Updated: 2015/04/02 23:52:26 by roblabla         ###   ########.fr       */
+/*   Created: 2015/11/09 19:23:50 by roblabla          #+#    #+#             */
+/*   Updated: 2015/11/09 19:24:20 by roblabla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,6 +39,3 @@ int				read_u32be(t_stream *stream, uint32_t *nbr)
 		*nbr = ntohl(*nbr);
 	return (res);
 }
-
-
-

@@ -6,14 +6,14 @@
 /*   By: rlambert <rlambert@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 14:58:25 by rlambert          #+#    #+#             */
-/*   Updated: 2014/11/07 18:48:32 by rlambert         ###   ########.fr       */
+/*   Updated: 2015/11/09 19:28:56 by roblabla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
 
-char *ft_strstr(const char *s1, const char *s2)
+char	*ft_strstr(const char *s1, const char *s2)
 {
 	const char *s1_it;
 	const char *s2_it;

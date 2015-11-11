@@ -6,7 +6,7 @@
 /*   By: rlambert <rlambert@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 11:14:15 by rlambert          #+#    #+#             */
-/*   Updated: 2015/03/23 17:45:25 by roblabla         ###   ########.fr       */
+/*   Updated: 2015/11/11 15:36:10 by roblabla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@
 # define FALSE 0
 # define TRUE !FALSE
 
-typedef char t_bool;
+typedef char	t_bool;
 
 void				*ft_memset(void *dst, int data, size_t len);
 void				ft_bzero(void *dst, size_t len);

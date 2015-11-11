@@ -6,14 +6,14 @@
 /*   By: rlambert <rlambert@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 14:58:25 by rlambert          #+#    #+#             */
-/*   Updated: 2014/11/10 12:32:50 by rlambert         ###   ########.fr       */
+/*   Updated: 2015/11/09 19:24:46 by roblabla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdlib.h>
 
-char *ft_strnstr(const char *haystack, const char *needle, size_t hlen)
+char	*ft_strnstr(const char *haystack, const char *needle, size_t hlen)
 {
 	size_t	nlen;
 	int		lastresult;

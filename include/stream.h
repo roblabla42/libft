@@ -6,7 +6,7 @@
 /*   By: rlambert <rlambert@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/04/02 19:51:07 by rlambert          #+#    #+#             */
-/*   Updated: 2015/04/02 23:40:39 by roblabla         ###   ########.fr       */
+/*   Updated: 2015/11/11 15:36:38 by roblabla         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 # define BUFSIZE 4096
 # include <stdint.h>
 # include <sys/types.h>
+
 typedef struct	s_stream
 {
 	int			fd;
